@@ -1,10 +1,10 @@
 package com.topcat.npclib.nms;
 
 import com.topcat.npclib.NPCManager;
-import net.minecraft.server.v1_6_R1.*;
+import net.minecraft.server.v1_6_R2.*;
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.v1_6_R1.CraftServer;
-import org.bukkit.craftbukkit.v1_6_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_6_R2.CraftServer;
+import org.bukkit.craftbukkit.v1_6_R2.entity.CraftPlayer;
 
 /**
  *
@@ -21,7 +21,6 @@ public class NPCPlayerConnection extends PlayerConnection {
 		return new CraftPlayer((CraftServer) Bukkit.getServer(), player); //Fake player prevents spout NPEs
 	}
 
-	@Override
 	public void d() {
 	}
 
